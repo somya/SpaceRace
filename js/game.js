@@ -29,6 +29,7 @@ function updateGame()
 		{
 			// show screen elements
 			$("#bar_" + i).fadeIn();
+			$("#text_" + i).fadeIn();
 			$("#subScreen_" + i).fadeIn();
 			$("#screen_" + i).fadeIn();
 			
@@ -37,6 +38,7 @@ function updateGame()
 		{
 			// hide screen elements
 			$("#bar_" + i).fadeOut();
+			$("#text_" + i).fadeOut();
 			$("#subScreen_" + i).fadeOut();
 			$("#screen_" + i).fadeOut();
 		}

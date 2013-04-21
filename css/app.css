@@ -38,8 +38,21 @@ body
 .progess_bar img
 {
 	position: absolute;
+}
+
+.left_header
+{
+	position: absolute;
+margin-left: 66px;
+margin-top: 150px;
+}
+
+.left_header img
+{
+	position: absolute;
 
 }
+
 
 .left_panel
 {
