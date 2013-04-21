@@ -1,6 +1,9 @@
 
-var gameParams = { lastScreen : 5 }
-var currentGameState = { screen : 1 }
+var gameParams = { lastScreen : 5 };
+var currentGameState = { 
+	screen : 1,
+	lastGestureTime : new Date()
+};
 
 
 function resetGame()
@@ -94,6 +97,8 @@ function vectorToString(vector, digits) {
   		// + "pointable IDs: " + gesture.pointableIds.join(", ") + ", "
   		// + "duration: " + gesture.duration + " &micro;s, ";
 
+
+
   		switch (gesture.type) {
   			case "circle":
   			// gestureString += "center: " + vectorToString(gesture.center) + " mm, "
@@ -106,7 +111,11 @@ function vectorToString(vector, digits) {
   			+ "current position: " + vectorToString(gesture.position) + " mm, "
   			+ "direction: " + vectorToString(gesture.direction, 2) + ", "
   			+ "speed: " + gesture.speed.toFixed(1) + " mm/s";
-  			moveToNextScreen();
+			if ( (new Date()) - currentGameState.lastGestureTime > 300)
+  			{
+  				moveToNextScreen();
+  			}
+  			currentGameState.lastGestureTime = new Date();
   			break;
   			case "screenTap":
   			case "keyTap":
