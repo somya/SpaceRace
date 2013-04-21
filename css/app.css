@@ -1,7 +1,7 @@
 
 body
 {
-	background-color: #000000;
+	background-color: #70A9A5;
 	margin: 0px;
 }
 
@@ -12,31 +12,89 @@ body
 	text-align: center;
 	vertical-align: middle;
 	position: relative;
-	margin: 0 auto;
-	width: 1070px;
+	margin: 100px auto;
+	width: 1200px;
+	height: 731px;
+	background-image: url("../images/background.jpg");
 }
 
 .category_button
 {
 	position: absolute;
-	z-index: 10;
-	background: rgba(0,0,0,0.7);
+	width: 60px;
+	height: 60px;
+	/*background: blue;*/
+	/*z-index: 10;
+	background: rgba(0,0,0,0.7);*/
+}
+
+.progess_bar
+{
+	position: absolute;
+	margin-left: 462px;
+	margin-top: 16px;
+}
+
+.progess_bar img
+{
+	position: absolute;
+
+}
+
+.left_panel
+{
+	position: absolute;
+
+margin-left: 66px;
+margin-top: 307px;
+}
+
+.left_panel img
+{
+	position: absolute;
+
+}
+
+.screen
+{
+	position: absolute;
+margin-left: 461px;
+margin-top: 177px;
+}
+
+.screen img
+{
+	position: absolute;
+
 }
 
 .category_button_1
 {
-	top: 255px;
-	left: 25px;
+	margin-left: 58px;
+	margin-top: 183px;
 }
 
 .category_button_2
 {
-	top: 255px;
-	left: 130px;
+	
+	margin-left: 161px;
+	margin-top: 183px;
 }
 
 .category_button_3
 {
-	top: 255px;
-	left: 235px;
+	
+	margin-left: 260px;
+	margin-top: 183px;
+}
+
+.tint {
+    float: left;
+    
+    margin: 0 20px 20px 0;
+}
+
+.tint img:hover {
+    opacity: .5;
+    cursor: pointer;
 }
