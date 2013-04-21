@@ -5,6 +5,17 @@ body
 	margin: 0px;
 }
 
+.logo
+{
+	position: absolute;
+	margin-left: 66px;
+	margin-top: 16px;
+}
+
+.logo img
+{
+	position: absolute;
+}
 
 
 .container
@@ -75,7 +86,7 @@ margin-left: 461px;
 margin-top: 177px;
 }
 
-.screen img
+.screen img, .screen iframe
 {
 	position: absolute;
 

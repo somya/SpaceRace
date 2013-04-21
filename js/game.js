@@ -19,6 +19,10 @@ function moveToNextScreen()
 		currentGameState.screen++;
 		playSound();
 	}
+  else //if (currentGameState.screen > gameParams.lastScreen)
+  {
+    window.location.href = "video.html";
+  }
 	updateGame();
 }
 
