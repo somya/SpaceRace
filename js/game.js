@@ -55,12 +55,12 @@ function onCategory1Click()
 
 function onCategory2Click()
 {
-	alert("Clicked on category 2.");
+	moveToNextScreen();
 }
 
 function onCategory3Click()
 {
-	alert("Clicked on category 3.");
+	moveToNextScreen();
 }
 
 function playSound()
